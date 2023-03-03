@@ -11,11 +11,11 @@
      <link rel="icon" href="assets/brand/favicon.png" type="image/png">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/frontend/css/all.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/frontend/css/slick.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/frontend/css/simple-line-icons.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/frontend/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/all.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/slick.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/simple-line-icons.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" type="text/css" media="all">
 
     <!-- aos scroll plugin -->
     <link rel="stylesheet" href="assets/plugins/aos/aos.css" type="text/css" media="all">
