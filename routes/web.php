@@ -15,6 +15,8 @@ use App\Http\Controllers\PostController;
 
 Route::get('/',[PostController::class,'index']);
 
+Route::get('admin/post/add',[PostController::class,'add']);
+
 
 //domainname.com/user/delete
 //coba
