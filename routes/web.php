@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,7 @@ Route::get('/',[PostController::class,'index']);
 
 Route::get('admin/post/add',[PostController::class,'add']);
 
+Route::post('/admin/post/store', [PostController::class, 'store'])->name('admin.post.store');
 
 //domainname.com/user/delete
 //coba

@@ -25,15 +25,16 @@
     <meta name="author" content="Creative Tim">
     <title>Sepekanberkarya Dashboard - Free Dashboard for Bootstrap 4</title>
     <!-- Favicon -->
-    <link rel="icon" href="{{assets ('assets/backend/img/brand/favicon.png') }} type="image/png">
+    <link rel="icon" href="{{ asset('assets/backend/img/brand/favicon.png') }}" type="image/png">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
-    <link rel="stylesheet" href="{{assets ('assets/backend/vendor/nucleo/css/nucleo.css') }} type="text/css">
-    <link rel="stylesheet" href="{{assets ('assets/backend/vendor/@fortawesome/fontawesome-free/css/all.min.css') }} type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/backend/vendor/nucleo/css/nucleo.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/backend/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" type="text/css">
     <!-- Argon CSS -->
-    <link rel="stylesheet" href="{{assets ('assets/backend/css/argon.css?v=1.2.0') }} type="text/css">
-    <link rel="stylesheet" href="{{assets ('assets/plugins/froala/css/froala_editor.pkgd.min.css') }} type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/backend/css/argon.css?v=1.2.0') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/froala/css/froala_editor.pkgd.min.css') }}" type="text/css">
+    
     <style>
         #fr-logo {
             display: none;
@@ -136,7 +137,8 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form action ="" method ="POST" enctype="multipart/form-data">
+                            <form action ="{{ url('admin/post/store') }}" method ="POST" enctype="multipart/form-data">
+                                    @csrf
                                 <h6 class="heading-small text-muted mb-4">Post information</h6>
                                 <div class="pl-lg-4">
                                     <div class="row">
