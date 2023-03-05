@@ -23,12 +23,12 @@ class PostController extends Controller
     public function store(Request $request){
 
         $post = new Post();
-        $post->post_title = $request->title;
-        $post->category_id = $request->category_id;
+        $post->post_title = $request->post_title;
+        $post->category_id = $request->cat_id;
         $post->content = $request->content;
 
         $post->save();
 
-
+        return back()->with(['message','Post berhasil dibuat!']);
     }
 }
